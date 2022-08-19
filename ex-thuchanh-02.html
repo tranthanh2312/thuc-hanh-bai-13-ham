@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh 02</title>
+</head>
+<body>
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type = "number" placeholder ="Fahrenheight"
+   oninput="temperatureConverter(this.value)"
+   onchange="temperatureConverter(this.value)">
+</p>
+<p>Celsius: <span id="outputcelsius"></span></p>
+<script>
+    function temperatureConverter(valnum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputcelsius").innerHTML = (valNum-32)
+        
+    }
+</script>
+</body>
+</html>
